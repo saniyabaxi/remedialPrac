@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Display Data</title>
+    
+</head>
+
+<body>
+
+    <table>
+            <tr>
+                <th>VehicleBrand</th>
+                <th>categoryName</th>
+                <th>vehiclePicture</th>
+                <th>Price</th>
+                <th>Depreciation</th>
+                <th>Years</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each listData}}
+            <tr>
+                <td>{{vehicleBrand}}</td>
+                <td>{{categoryName}}</td>
+                <td><img src="/uploads/{{vehiclePicture}}" alt="profile" width="80" /></td>
+                <td>{{Price}}</td>
+                <td>{{depreciation}}</td>
+                <td>{{NumberOfYears}}</td>
+                <td>{{TotalPrice}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+
+</html>

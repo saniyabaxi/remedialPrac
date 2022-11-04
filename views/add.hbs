@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add Vehicle</title>
+    
+</head>
+
+<body>
+    
+
+       
+                    <a href="/AddProduct">Home </a>
+       
+                
+                    <a href="/list">Display Vehicles</a>
+         
+
+  
+    
+                <form method="post" action="/AddProduct" enctype="multipart/form-data">
+                 
+               Brand:
+                        <input type="text" class="form-control" id="brand" name="brand" placeholder="Enter Brand">
+           
+                Category:
+                        <select name="category">
+                            {{#each data}}
+                            <option>{{categoryName}}</option>
+                            {{/each}}
+                        </select>
+            
+             
+                Image:
+                        <input type="file" class="form-control" id="image" placeholder="Enter Image" name="image">
+    
+                
+                Price:
+
+                        <input type="text" class="form-control" id="price" placeholder="Enter price" name="price">
+  
+                 
+           Depreciation:
+                        <input type="text" class="form-control" id="depreciation" placeholder="Enter depreciation"
+                            name="depreciation">
+            No of Years:
+                    
+                        <input type="text" class="form-control" id="years" placeholder="Enter years" name="years">
+   
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+</body>
+
+</html>
